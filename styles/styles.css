@@ -51,6 +51,7 @@ section {
 }
 
 .section {
+  padding: 3rem 18rem;
   transform: translateY(-100%) scale(0);
   transition: all 0.4s easy-in-out;
   background-color: var(--color-primary);
@@ -59,26 +60,53 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #ae7827;
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #5627ae;
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #2788ae;
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #91ae27;
 }
 
 .sec5 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #ae275f;
+}
+
+.active {
+  display: block;
+  -webkit-animation: scaleAnim 0.8s ease-in-out;
+          animation: scaleAnim 0.8s ease-in-out;
+}
+@-webkit-keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
+}
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
 }
 
 .controlls {
@@ -92,9 +120,6 @@ section {
   flex-direction: column;
   transform: translateY(-50%);
 }
-.controlls :hover {
-  background-color: var(--color-secondary) !important;
-}
 .controlls .active-btn {
   background-color: var(--color-secondary) !important;
   transition: all 0.3s ease-in-out;
@@ -102,6 +127,7 @@ section {
 
 .control {
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
   padding: 1rem;
@@ -115,4 +141,8 @@ section {
 }
 .control i {
   font-size: 1.4rem;
+  position: fixed;
+  font-size: 1.4rem;
+  color: var(--color-grey-1);
+  pointer-events: none;
 }/*# sourceMappingURL=styles.css.map */
