@@ -228,6 +228,7 @@ section {
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.08);
 }
 .about-container .right-about .about-item .abt-text .large-text {
   font-size: 3rem;
