@@ -18,7 +18,7 @@
   --color-grey-5:#2a2e35;
   --color-grey-6:#12181b;
   --br-sm-2:14px;
-  --box-shadow-1:0 3px 15px rgba(0,0,0,.3);
+  --box-shadow-1:0 3px 15px rgba(0,0,0,.5);
 }
 
 body {
@@ -132,6 +132,36 @@ section {
   border-radius: 50%;
   margin: 0.7rem 0;
   box-shadow: var(--box-shadow-1);
+  transition: all 0.4s easy-in-out;
+}
+.control .con-text {
+  cursor: default;
+  display: none;
+  position: absolute;
+  left: 25px;
+  transition: all 2s easy-in-out;
+  transform: translateX(0);
+  background-color: var(--color-secondary);
+  width: 100px;
+  height: 55px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  box-shadow: var(--box-shadow-1);
+  z-index: -1;
+}
+.control .con-text h2 {
+  padding-top: 12px;
+  padding-left: 8px;
+  font-size: 1.3rem;
+  color: var(--color-grey-1);
+}
+.control:hover {
+  background-color: var(--color-secondary);
+}
+.control:hover .con-text {
+  transition: all 2s easy-in-out;
+  transform: translateX(-100%);
+  display: block;
 }
 .control i {
   font-size: 1.4rem;
@@ -139,6 +169,7 @@ section {
   font-size: 1.4rem;
   color: var(--color-grey-1);
   pointer-events: none;
+  z-index: 10;
 }
 
 .header-content {
@@ -160,8 +191,8 @@ section {
   left: 0;
   top: 0;
   z-index: -1;
-  -webkit-clip-path: polygon(0 0, 74% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 74% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(39% 0, 100% 82%, 73% 100%, 0% 100%, 0% 0%);
+          clip-path: polygon(39% 0, 100% 82%, 73% 100%, 0% 100%, 0% 0%);
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
@@ -442,7 +473,7 @@ section {
 
 .blogs {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 3rem;
   margin-top: 3rem;
 }
