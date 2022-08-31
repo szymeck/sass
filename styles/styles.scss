@@ -140,19 +140,18 @@ section{
         border-radius: 50%;
         margin: .7rem 0;
         box-shadow: var(--box-shadow-1);
-        transition: all .4s easy-in-out ;
+        
         .con-text{
             cursor: default;
-            display: none;
+           opacity: 0;
             position: absolute;
-            left:25px;
-            transition: all 2s easy-in-out ;
-            transform: translateX(0);
+            left:-55px;
+            transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265,1.55);
+            
             background-color: var(--color-secondary);
-            width: 100px;
+            width: 80px;
             height: 55px;
-            border-top-left-radius: 25px;
-            border-bottom-left-radius: 25px;
+           border-radius: 18px;
             box-shadow: var(--box-shadow-1);
             z-index: -1;
             h2{
@@ -160,6 +159,8 @@ section{
                 padding-left: 8px;
                 font-size: 1.3rem;
                 color: var(--color-grey-1);
+                width: 80px;
+                height: 55px;
                 
             }
             
@@ -168,10 +169,11 @@ section{
             
             background-color: var(--color-secondary);
             .con-text{
-                transition: all 2s easy-in-out ;
-                transform: translateX(-100%);
-                display: block;
-
+                
+                
+                opacity: 1;
+                left: -85px;
+               
                 
             }
         }
@@ -184,6 +186,59 @@ section{
             pointer-events: none;
             z-index: 10;
             
+        }
+    }
+
+    .control-2{
+        .con-text{
+            h2{
+                padding-left: 7px;
+            }
+            
+        }
+        
+    }
+
+    .control-3{
+        .con-text{
+            width: 100px;
+            h2{
+                padding-left: 6px;
+            }
+            
+        }
+        &:hover{
+            .con-text{
+            left:- 105px;}
+        }
+    }
+
+    .control-4{
+        .con-text{
+            width: 60px;
+            left:-30px;
+            h2{
+                padding-left: 6px;
+            }
+            
+        }
+        &:hover{
+            .con-text{
+            left:- 65px;}
+        }
+    }
+
+    .control-5{
+        .con-text{
+            width: 100px;
+            h2{
+                padding-left: 6px;
+            }
+            
+        }
+        &:hover{
+            .con-text{
+            left:- 105px;}
         }
     }
 
