@@ -135,6 +135,7 @@ section {
 }
 .control .con-text {
   cursor: default;
+  pointer-events: none;
   opacity: 0;
   position: absolute;
   left: -55px;
@@ -153,11 +154,13 @@ section {
   color: var(--color-grey-1);
   width: 80px;
   height: 55px;
+  text-shadow: var(--box-shadow-1);
 }
 .control:hover {
   background-color: var(--color-secondary);
 }
 .control:hover .con-text {
+  pointer-events: none;
   opacity: 1;
   left: -85px;
 }

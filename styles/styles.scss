@@ -143,15 +143,15 @@ section{
         
         .con-text{
             cursor: default;
-           opacity: 0;
+            pointer-events: none;
+            opacity: 0;
             position: absolute;
             left:-55px;
             transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265,1.55);
-            
             background-color: var(--color-secondary);
             width: 80px;
             height: 55px;
-           border-radius: 18px;
+            border-radius: 18px;
             box-shadow: var(--box-shadow-1);
             z-index: -1;
             h2{
@@ -161,7 +161,7 @@ section{
                 color: var(--color-grey-1);
                 width: 80px;
                 height: 55px;
-                
+                text-shadow: var(--box-shadow-1);
             }
             
         }
@@ -170,7 +170,7 @@ section{
             background-color: var(--color-secondary);
             .con-text{
                 
-                
+                pointer-events: none;
                 opacity: 1;
                 left: -85px;
                
