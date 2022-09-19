@@ -844,8 +844,8 @@ section {
     grid-template-columns: 1fr;
   }
   header .header-content .right-header {
-    padding: 3rem;
-    padding-bottom: 3rem;
+    padding: 2rem;
+    padding-bottom: 2rem;
     margin: 0 auto;
     width: 90%;
   }
@@ -860,7 +860,7 @@ section {
     background-color: var(--color-black);
     transition: all 0.4s easy-in-out;
     height: 102% !important;
-    width: 65% !important;
+    width: 85% !important;
   }
   .left-header .h-shape {
     display: none;

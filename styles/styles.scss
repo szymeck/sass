@@ -934,8 +934,8 @@ section{
             
         
         .right-header{
-            padding: 3rem;
-            padding-bottom: 3rem;
+            padding: 2rem;
+            padding-bottom: 2rem;
             margin: 0 auto;
             width: 90%;
            .name{
@@ -955,7 +955,7 @@ section{
                 transition: all .4s easy-in-out ;
              
             height: 102% !important;
-            width: 65% !important;
+            width: 85% !important;
         }
         .h-shape{
                 display: none;
@@ -1026,6 +1026,7 @@ section{
             grid-template-columns: 1fr;
         }
     }
+   
     .sec2{
         padding:2rem 2.5rem ;
         padding-bottom: 6rem;
