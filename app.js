@@ -37,3 +37,15 @@ themeBtn.addEventListener('click',()=>{
     element.classList.toggle('light-mode');
 })
 
+document.addEventListener( 'DOMContentLoaded', function() {
+    var splide = new Splide( '.splide', {
+        type  : 'loop',
+        rewind: true,
+        drag: 'free',
+        snap:'true',
+      } );
+      
+      splide.mount();
+    
+} );
+// import Splide from '@splidejs/splide';
