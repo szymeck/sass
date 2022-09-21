@@ -265,7 +265,7 @@ section{
         position: fixed;
         pointer-events: none;
        top: 1.5%;
-       right: 2.2%;
+       right: 3.2%;
             font-size: 0.9rem;
             text-shadow: var(--box-shadow-1);
             padding-bottom: 0.3rem;
@@ -273,7 +273,7 @@ section{
     .theme-btn{
         position: fixed;
         top: 4%;
-        right: 2%;
+        right: 3%;
         box-shadow: var(--box-shadow-1);
             cursor: pointer;
             width: 40px;
@@ -715,16 +715,24 @@ section{
     
 }
 .splide__arrow{
-    background-color: var(--color-secondary)
+    background-color: var(--color-secondary);
+    margin: 0.3rem;
 }
 
 .splide__slide {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0.5rem 0.8rem;
     img{
        object-fit: fill; 
+       margin: 1rem 2rem;
+       max-width: 100%;
+       height: auto;
        max-height: 600px;
+       border-radius: 15px;
+       box-shadow: var(--box-shadow-1);
+       
     }
 }
 
@@ -1142,7 +1150,11 @@ section{
             }
         }
     }
+    
+        
+    
     .portfolios{
+        
         
         grid-template-columns: repeat(2,1fr);
         @media(max-width:720px){
