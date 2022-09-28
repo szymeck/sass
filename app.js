@@ -3,8 +3,9 @@ const sectBtns = document.querySelectorAll('.controlls');
 const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
 
+ // button click active
 const pageTransition = function(){
-    // button click active
+   
     for(let i=0;i<sectBtn.length;i++){
         sectBtn[i].addEventListener('click',function(){
             let currentBtn=document.querySelectorAll('.active-btn');
@@ -37,6 +38,8 @@ themeBtn.addEventListener('click',()=>{
     element.classList.toggle('light-mode');
 })
 
+
+// carousel
 document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '.splide', {
         type  : 'loop',
@@ -48,4 +51,4 @@ document.addEventListener( 'DOMContentLoaded', function() {
       splide.mount();
     
 } );
-// import Splide from '@splidejs/splide';
+
