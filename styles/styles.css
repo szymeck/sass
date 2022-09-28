@@ -732,8 +732,8 @@ section {
 }
 .splide__slide .proj1 {
   position: absolute;
-  right: 20px;
-  bottom: 3px;
+  right: 30px;
+  bottom: 20px;
   box-shadow: var(--box-shadow-1);
   opacity: 0;
   transition: all 0.2s ease-in-out;
@@ -750,8 +750,8 @@ section {
 }
 .splide__slide .proj2 {
   position: absolute;
-  right: 100px;
-  bottom: 3px;
+  right: 110px;
+  bottom: 20px;
   box-shadow: var(--box-shadow-1);
   opacity: 0;
   transition: all 0.2s ease-in-out;
@@ -782,6 +782,7 @@ section {
   color: var(--color-grey-0);
   text-shadow: var(--box-shadow-1);
   max-width: 700px;
+  padding: 5px 5px;
   width: 90%;
 }
 .splide__slide .project-text hr {
@@ -801,13 +802,20 @@ section {
   font-size: 1.6rem;
   text-shadow: var(--box-shadow-1);
   color: var(--color-grey-0);
+  background-color: rgba(0, 0, 0, 0.662745098);
+  padding: 6px 10px;
+  border-radius: 15px;
 }
 .splide__slide .project-text p {
   opacity: 0;
   color: var(--color-grey-0);
   text-shadow: var(--box-shadow-1);
   transition: all 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.662745098);
+  padding: 6px 10px;
   line-height: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 .splide__slide .project-text:hover .proj1 {
   opacity: 0.8;
@@ -817,6 +825,10 @@ section {
 }
 .splide__slide .project-text:hover hr {
   width: 100%;
+}
+.splide__slide .project-text:hover h1 {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 .splide__slide .project-text:hover h1 span {
   transition: all 0.3s ease-in-out;
