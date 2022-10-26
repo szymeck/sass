@@ -10,7 +10,8 @@ const pageTransition = function(){
         sectBtn[i].addEventListener('click',function(){
             let currentBtn=document.querySelectorAll('.active-btn');
             currentBtn[0].className=currentBtn[0].className.replace('active-btn', '');
-            this.className+=' active-btn'
+            this.className+=' active-btn';
+            window.scrollTo(0, 0);
         })
     }
 };
@@ -21,7 +22,6 @@ const pageTransition = function(){
 allSections.addEventListener('click', (e) =>{
     const id = e.target.dataset.id;
     if(id){
-        
         sections.forEach((section)=>{
             section.classList.remove('active')
         })
@@ -42,7 +42,7 @@ themeBtn.addEventListener('click',()=>{
 // carousel
 document.addEventListener( 'DOMContentLoaded', function() {
     var splide = new Splide( '.splide', {
-        type  : 'loop',
+        
         rewind: true,
         drag: 'free',
         snap:'true',
