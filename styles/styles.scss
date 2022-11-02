@@ -229,6 +229,8 @@ section{
             left:- 105px;}
         }
     }
+
+    // theme button
     .theme{
         display: flex;
         justify-content: center;
@@ -292,6 +294,7 @@ section{
             }
     }
 
+    // main button
     @mixin transition($property: all, $duration: 0.45s, $ease: cubic-bezier(0.65,0,.076,1)) {
       transition: $property $duration $ease;
     }
@@ -755,6 +758,7 @@ section{
 .splide{
     padding: 3rem 0rem;
     min-height: auto;
+
 }
 .splide__arrow{
     background-color: var(--color-secondary);
@@ -776,7 +780,7 @@ section{
     justify-content: center;
     align-items: center;
     padding: 0.5rem 0.8rem;
-    width: 150%;
+    
     i{
         font-size: 2rem;
         text-shadow: var(--box-shadow-1);
@@ -820,13 +824,11 @@ section{
         }        
     }
     img{
-       object-fit: fill; 
        margin: 1rem 2rem;
        max-width: 100%;
        min-height: 530px;
        object-fit: cover;
        height: auto;
-       max-height: 550px;
        border-radius: 15px;
        box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.747);
     }
@@ -1071,11 +1073,9 @@ section{
         }.i-c-2{
             display: flex;
             flex-direction: column;
-            :last-child{
-            margin-top: 1.5rem;
-            }
+            
         }
-        .submit-btn {
+        .main-button {
             display: flex;
             justify-content: flex-start;
         }
@@ -1158,7 +1158,6 @@ section{
     
     .splide__slide{
         img{
-            min-height: 500px;
             object-fit:cover;
         }
     }
@@ -1296,7 +1295,6 @@ section{
 
     .splide__slide{
         img{
-            min-height: 400px;
             object-fit:cover;
         }
         .proj1{
@@ -1320,7 +1318,7 @@ section{
                 font-size: 1.2rem;
             }
            p{
-               font-size:0.8rem ; 
+            font-size:0.8rem ; 
             opacity: 1;
             line-height: 1.5;
             padding: 6px 10px;
@@ -1346,6 +1344,11 @@ section{
     }
     .blogs{
         grid-template-columns: 1fr;
+        .blog{
+            img{
+                filter: grayscale(0%);
+            }
+        }
     }
     .theme-btn{
         width: 40px;
