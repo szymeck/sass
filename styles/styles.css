@@ -69,23 +69,28 @@ section {
 
 .section {
   transform: translateY(-100%) scale(0);
+  -webkit-transform: translateY(-100%) scale(0);
   transition: all 0.4s easy-in-out;
+  -webkit-transition: all 0.4s easy-in-out;
   background-color: var(--color-primary);
 }
 
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
+  -webkit-transform: translateY(0) scale(1);
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
+  -webkit-transform: translateY(0) scale(1);
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
+  -webkit-transform: translateY(0) scale(1);
 }
 
 .sec4 {
